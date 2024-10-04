@@ -1,0 +1,13 @@
+/* static/css/styles.css */
+body {
+    background-color: #f0f8ff;
+}
+
+.hero {
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+}
+
+h1, h2 {
+    color: #471313; /* Texto blanco */
+}
