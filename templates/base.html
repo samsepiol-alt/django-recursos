@@ -1,28 +1,18 @@
 {% load static %}
+<!--CARGAR archivos estaticos-->
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--definir el titulo del bloque-->
     <title>{% block title %}Página{% endblock %}</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
-        body {
-            padding-top: 56px; /* Espacio para la barra de navegación */
-        }
-        .hero {
-            height: 100vh; /* Altura de la sección hero */
-            background: url('https://via.placeholder.com/1920x1080') no-repeat center center; /* Imagen de fondo */
-            background-size: cover;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-align: center;
-        }
+
     </style>
 
-<link rel="stylesheet" href="{% static 'css/styles.css' %}"> <!-- Incluye el CSS estático -->
+<link rel="stylesheet" href="{% static 'css/styles.css' %}"> <!-- incluye el CSS estatico -->
 
 </head>
 <body>
@@ -50,6 +40,7 @@
 
 <!-- Contenido específico de cada página -->
 <div class="container mt-5">
+    <!--cargar bloque-->
     {% block content %}{% endblock %}
 </div>
 
@@ -59,7 +50,7 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+<!--incluye el js statico-->
 <script src="{% static 'js/scripts.js' %}"></script>
 
 </body>
