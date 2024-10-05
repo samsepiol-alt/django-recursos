@@ -1,5 +1,7 @@
 {% load static %}
 <!--CARGAR archivos estaticos-->
+<!--En este archivo base.html se deben cargar los recursos comunes
+ a utilizar por todos los bloques que lo llamen-->
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -11,7 +13,8 @@
     <style>
 
     </style>
-
+<!--con {% static %} podemos hacer referencia a la carpeta configurada 
+en settings.py para usarse como directorio base de los archivos estaticos-->
 <link rel="stylesheet" href="{% static 'css/styles.css' %}"> <!-- incluye el CSS estatico -->
 
 </head>
